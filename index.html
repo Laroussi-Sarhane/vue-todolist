@@ -16,7 +16,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css' integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==' crossorigin='anonymous'/>
 
   <!-- Custom CSS  -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Vue Todo List</title>
 </head>
@@ -25,7 +25,7 @@
   <div id="app" class="container">
 
     <div class="logo">
-      <img src="assets/logo.png" alt="logo">
+      <img src="img/logo.png" alt="logo">
     </div>
 
     <div class="new-task">
@@ -38,7 +38,7 @@
     <div class="task-container">
       <ul v-if="toDoList.length > 0">
         <li v-for="(task, index) in toDoList">
-          <span :class="{'done': task.done}" @click="task.done=!task.done" >{{task.text}}</span>
+          <span :class="{'done': task.done}" @click="task.done=!task.done" > {{task.text}} </span>
           <i class="fa-solid fa-xmark" @click=" removeTask(task, index)"></i>
         </li>
       </ul>

@@ -20,6 +20,9 @@ img{
 .error{
   color: red;
   font-size: .9rem;
+  position: absolute;
+  left: 44.5%;
+  top: 140px;
 }
 
 
@@ -73,6 +76,10 @@ img{
   color: red;
 }
 
-.task-container li.done{
+.task-container li .done{
   text-decoration: line-through;
+}
+
+.task-container li span{
+ cursor: pointer;
 }
