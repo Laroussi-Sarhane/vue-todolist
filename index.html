@@ -38,7 +38,9 @@
     <div class="task-container">
       <ul v-if="toDoList.length > 0">
         <li v-for="(task, index) in toDoList">
-          <span :class="{'done': task.done}" @click="task.done=!task.done" > {{task.text}} </span>
+          <span :class="{'done': task.done}" @click="task.done=!task.done" > {{task.text}} add changs
+            
+          </span>
           <i class="fa-solid fa-xmark" @click=" removeTask(task, index)"></i>
         </li>
       </ul>
