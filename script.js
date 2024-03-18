@@ -6,19 +6,19 @@ createApp({
       toDoList:[
         {
           text:'todo-thing',
-          done: true,
+          done: true
         },
         {
           text:'babbo',
-          done: false,
+          done: false
         },
         {
           text:'luca',
-          done: false,
+          done: false
         },
         {
           text:'quarto',
-          done: true,
+          done: true
         },
       ],
       inputTask:'',
